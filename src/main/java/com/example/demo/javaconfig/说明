@@ -1,0 +1,10 @@
+java注解
+java配置是Spring4.x推荐的配置方式，可以完全替代xml配置
+java配置是通过@Configuration和@Bean来实现的
+@Configuration
+ 声明当前类是一个配置类，相当于一个Spring配置的xml文件
+@Bean
+ 注解在方法上，声明当前方法返回值为一个Bean
+
+ 关于何时使用java配置或者注解配置，主要原则：全局配置使用java配置(如数据库相关配置、MVC相关配置),
+ 业务的Bean的配置使用注解配置(@Component、@Service、@Repository、@Controller)
